@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Study CSS </title>
+
+    <!-- เรียกใช้ font (Kanit) จาก Google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style-css.css">
+
+</head>
+<body>
+    <div class="topic">
+        <h1> SSC code </h1>
+    </div>
+
+    <section class="info1">
+
+        <div class="container">
+            <!--
+        <tr>
+            <td>  </td>
+            <td>  </td>
+        </tr>
+    -->    
+        <h2> background </h2>
+        <table class="table">
+            <tr>
+                <th> background: url(....) no-repeat </th>
+                <td> คีย์รัด </td>
+            </tr>
+            <tr>
+                <th> background-image: url(....) </th>
+                <td> เพื่อใส่ที่อยู่ของรูปภาพ </td>
+            </tr>
+            <tr>
+                <th> background-repeat: no-repeat </th>
+                <td> no-repeat ไม่ให้รูปทำซ้ำกันหลายรูป </td>
+            </tr>
+            <tr>
+                <th> background-size: cover </th>
+                <td> ทำให้ภาพครอบคลุมพื้นที่ทั้งหมดที่กำหนด </td>
+            </tr>
+        </table>
+        <br />
+
+        <h2> border </h2>
+        <table class="table">
+            <tr>
+                <th> border: 1px solid black </th>
+                <td> คีย์รัด ส่วนแรกจะกำหนด width แล้วก็ style ทุกท้ายก็เป็น color </td>
+            </tr>
+            <tr>
+                <th> border-width: 10px </th>
+                <td> กำหนดขนาด </td>
+            </tr>
+            <tr>
+                <th> border-style: none </th>
+                <td> กำหนดลักษณะ * none ไม่มี solid เส้นทึบ dashed เส้นประ * </td>
+            </tr>
+            <tr>
+                <th> border-color: black </th>
+                <td> กำหนดสีของกรอบ </td>
+            </tr>
+            <tr>
+                <th> border-radius: 1px 1px 1px 1px </th>
+                <td> กำหนด8ความมนของขอบในกรอบนั้นๆ </td>
+            </tr>
+        </table>
+        <br />
+
+        <h2> margin , padding </h2>
+        <table class="table">
+            <tr>
+                <th> margin: 0 0 0 0 </th>
+                <td> ห่างทาง บน ขวา ล่าง ซ้าย 0 </td>
+            </tr>
+            <tr>
+                <th> margin: 0 auto </th>
+                <td> บนล่าง 0 ซ้ายขวา auto * ทำให้อยู่กึ่งกลาง * </td>
+            </tr>
+            <tr>
+                <th> margin: 10px 20px </th>
+                <td> บนล่าง 10px ซ้ายขวา 20px </td>
+            </tr>
+            <tr>
+                <th> margin-top: 10px </th>
+                <td> ห่างบน 10px </td>
+            </tr>
+            <tr>
+                <th> margin-right: 10px  </th>
+                <td> ห่างขวา 10px </td>
+            </tr>
+            <tr>
+                <th> margin-bottom: 10px </th>
+                <td> ห่างล่าง 10px </td>
+            </tr>
+            <tr>
+                <th> margin-left: 10px </th>
+                <td> ห่างซ้าย 10px </td>
+            </tr>
+
+            <tr>
+                <th> padding: 0 0 0 0 </th>
+                <td> ห่างทาง บน ขวา ล่าง ซ้าย 0 </td>
+            </tr>
+            <tr>
+                <th> padding: 0 auto </th>
+                <td> บนล่าง 0 ซ้ายขวา auto </td>
+            </tr>
+            <tr>
+                <th> padding: 10px 20px </th>
+                <td> บนล่าง 10px ซ้ายขวา 20px </td>
+            </tr>
+            <tr>
+                <th> padding-top: 10px </th>
+                <td> ห่างบน 10px </td>
+            </tr>
+            <tr>
+                <th> padding-right: 10px </th>
+                <td> ห่างขวา 10px </td>
+            </tr>
+            <tr>
+                <th> padding-bottom: 10px </th>
+                <td> ห่างล่าง 10px </td>
+            </tr>
+            <tr>
+                <th> padding-left: 10px </th>
+                <td> ห่างซ้าย 10px </td>
+            </tr>
+        </table>
+        <br />
+
+        <h2> width , max-width </h2>
+        <table class="table">
+            <tr>
+                <th> width:  ; </th>
+                <td> จะคงค่าไว้แบบเดิม ไม่มีการขยับหรือเปลี่ยนแปลงขนาดไปจากที่กำหนด </td>
+            </tr>
+            <tr>
+                <th> max-width:  ; </th>
+                <td> มีการใช้ค่าให้เหมาะสมกับขนาดหน้าจอ </td>
+            </tr>
+        </table>
+        <br>
+
+        <h2> position </h2>
+        <p> จัดตำแหน่งของกล่องข้อความ </p>
+        <table class="table">
+        <tr>
+            <th> position: static; </th>
+            <td> static เป็นค่าปกติอยู่เเล้ว </td>
+        </tr>
+        <tr>
+            <th> position: relative; </th>
+            <td> จัดตำแหน่งจากการอ้างอิงตำแหน่งเดิม </td>
+        </tr><tr>
+            <th> position: fixed; </th>
+            <td> เมื่อสกอร์เมาส์จะไปเคลื่อนตาม </td>
+        </tr><tr>
+            <th> position: sticky; </th>
+            <td> เมื่อสกอร์เมาส์ผ่านจะเคลื่อนที่ตามลงจากตำแหน่งเดิม </td>
+        </tr><tr>
+            <th> position: adsolute; </th>
+            <td> adsolute ทำงานร่วมกับ relative ในการกำหนดกล่องขึ้นมาโดย adsolute จะเป็นกล่องย่อยที่อยู่ในกล่องของ relative </td>
+        </tr>
+        </table>
+
+        <h2> z-index </h2>
+        <table class="table">
+        <tr>
+            <th> z-index: ; </th>
+            <td> การจัดเลเยอร์ว่าจะให้ตัวไหนยู่หน้าอยู่หลังกันได้ </td>
+        </tr>
+        </table>
+
+        <h2> overflow </h2>
+        <p> overflow เป็นการกำหนดกล่องข้อความขึ้นมาโดยใช้ overflow เป็นการจัดข้อความถายในกล่องนั้นๆ </p>
+        <table class="table">
+            <tr>
+                <th> visible </th>
+                <td> เป็นค่าปกติอยู่เเล้วจะไม่เปลี่ยนแปลง </td>
+            </tr>
+            <tr>
+                <th> hidden </th>
+                <td> เนื้อหาที่เกินออกมาจะถูกตัดออกไป </td>
+            </tr>
+            <tr>
+                <th> acroll </th>
+                <td> ข้อความทั้งหมดจะอยู่ในกล่อง โดยมีการสกอร์บาร์ขึ้นมา </td>
+            </tr>
+            <tr>
+                <th> auto </th>
+                <td> จะทีการเพิ่มสกอร์บาร์ขึ้นเมื่อจำเป็น ใช้กับรูปภาพที่มีการกำนหด float ได้ด้วย </td>
+            </tr>
+        </table>
+
+        <h2> float </h2>
+        <p> การกำหนดให้กล่องอยู่ในทิศทางใดทิศทางหนึ่ง สมัยนี้จะไม่นิยมใช้ float เพราะมีบัตเกิดขึ้น แก้ไขในการกำหนด class ขึ้นมาเเล้วมีการใช้ clear: both; ใน class </p>
+        <table class="table"> 
+            <tr>
+                <th> float </th>
+                <td> การกำหนดให้กล่องอยู่ในทิศทางใดทิศทางหนึ่ง จะเป็น left ri </td>
+            </tr>
+        </table>
+
+        <h2> pseudo </h2>
+        <p> มีหลากหลายตัวเลือกในการใช้ </p>
+        <table class="table">
+            <tr>
+                <th> : pseudo-classes  </th>
+                <td> pseudo-classes มีหลากหลาย </td>
+            </tr>
+            <tr>
+                <th> :: pseudo-elements </th>
+                <td> pseudo-elements มีหลากหลาย </td>
+            </tr>
+        </table>
+
+        <h2> box-sizing </h2>
+        <table class="table">
+            <tr>
+                <th> box-sizing: border-box; </th>
+                <td> เป็นการกำหนดขนาดกว้าง สูง ให้เป็นค่าตามที่เรากำหนด </td>
+            </tr>
+        </table>
+        </div>
+    
+            
+    </section>
+</body>
+</html>

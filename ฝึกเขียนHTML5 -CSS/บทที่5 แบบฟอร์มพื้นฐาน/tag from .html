@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="th">
+    <head>
+        <title>tag from</title>
+        <style>
+              div {
+        width: 100px;
+        height: 200px;
+        }
+        </style>
+    </head>
+    <body> 
+        <div>
+            <form method="post" action="tast.php" name="myFrom">
+               <!--/method เป็นการส่งข้อมูลตือ postและ det /actionจะบอกว่าจะส่งข้อมูลไปยังไฟล์ใด /name กำหนดชื่อเเบบฟอร์ม-->
+                First name:<input type="text" name="firstname" /><br />
+                Last name:<input type="text" name="lastname" />
+            </form>
+        </div>    
+        <div>
+            <form>
+                Username:<input type="text" name="fristname" /><br />
+                Password:<input type="password" name="pwd" /><br /><!--การใส่ tyle="possword" คือจะทำให้ข้อความที่ใส่ไปเป็น****-->
+                <div><textarea rows="5" cols="20" name="details"></textarea></div><!--เป็นtagที่เป็นที่ใช้ในการใส่ข้อความยาวๆ-->
+            </form>
+        </div>  
+        <div>
+            <form>
+                <input type="radio" name="sex" value="เพศชาย">เพศชาย<!--type="radio" จะสามารถเลือกสิ่งใดสิ่งหนึ่งได้-->
+                <br />
+                <input type="radio" name="sex" value="เพศหญิง">เพศหญิง
+            </form>    
+        </div>  
+        <div>
+            <form>
+                <input type="checkbox" name="ridel1" valus="bike" />มอเตอร์ไซด์<!--type="checkbox" จะสามารถเลือกคำตอบได้หลายๆ อย่าง-->
+                <br />
+                <input type="checkbox" name="ridel2" valus="car" />รถยนต์
+                <br />
+                <input type="checkbox" name="ridel3" value="bickcle" />จักรยาน
+            </form>
+        </div>
+    </body>
+</html>

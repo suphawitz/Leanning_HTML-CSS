@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>ทบทวน form และ input</title>
+        <meta charset="UTF-8">
+        <style>
+            h2 {
+                text-shadow: 2px 2px 2px grey;
+            }
+            #searchgoogle {
+                display: block;
+                margin: 0 auto;
+                padding-left: 500px;
+                padding-top: 20px;
+            }
+            #searchimagegoogle {
+                display: block;
+                margin: 0 auto;
+                padding-left: 500px;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="searchgoogle">
+            <h2>ค้นหนาใน Google</h2>
+            <form action="https://www.google.com/search">
+                <label for="search">ค้นหา</label> 
+                <input id="search" name="q"><!--name="q" ใช้กับคำสั่งนี้-->
+                <input type="submit" value="go">
+            </form>
+        </div><br />
+        <div id="searchimagegoogle">
+            <h2>ค้นหารูปภาพใน Google</h2>
+            <form action="https://www.google.com/search" target="_blank">
+                <input type="hidden" name="tbm" value="isch"><!--type="hidden" และ value="isch" ค้นหาเฉพาะรูปภาพ-->
+                <label for="search">ค้นหา</label> 
+                <input id="search" name="q" title="กรอกข้อความที่ต้องการค้นหา" /><!--การกำหมด title หากเราเลื้อนเมาส์ไปยัง input นี้จะมีข้อความที่ใส่ลงไปขึ้นมา-->
+                <input type="submit" value="go"><br />
+                <input type="checkbox" id="imagesearch">
+                <label for="imagesearch">เฉพาะรูปภาพ</label><br />
+                <input type="reset" value="เคลียร์">
+            </form>
+        </div>
+    </body>
+</html>

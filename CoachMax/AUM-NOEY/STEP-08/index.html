@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta />
+        <title> STEP 08 - สอนน้องให้เป็นโปรแกรมเมอร์ </title>
+        <style>
+
+            section { display: block; }
+            section.content { display: block; } 
+              
+            div.display-flex { display: flex; }
+            div.border { border: 1px solid #dddddd;}
+
+            div.div-01 { flex: 0 0 30%; max-width: 30%; }
+            div.div-02 { flex: 0 0 40%; max-width: 40%; }
+            div.div-03 { flex: 0 0 30%; max-width: 30%; }
+
+            .margin { margin: 10px 10px 10px 10px; } 
+            .padding { padding: 10px 10px 10px 10px; }
+
+            .table { width: 100%; border-collapse: collapse; }
+            .table td { padding: 5px 10px; width: 40%; border: 1px solid #dddddd; }
+            .table td:first-child { width: 30%; }
+            .table td:last-child { width: 30%; }
+
+            .table-extra { width: 100%; border-collapse: collapse; }
+            .table-extra th, .table-extra td { padding: 5px 10px; border-bottom: 1px solid #dddddd; }
+
+            /* กำหนดสีแบบละเอียด เติม rgb หรือ rgba หาค่าใน google */
+            .table-extra thead th { background-color:rgba(76, 175, 80, 1.0); color: rgb(255, 255, 255); font-weight: 400; text-align: left; }
+            .table-extra tbody tr:nth-child(even) { background-color: #f2f2f2; }
+            .table-extra tfoot th { background-color: rgba(76, 175, 80, 0.5); color: #000000; font-weight: 400; text-align: left; }
+
+        </style>
+        <script>
+
+        </script> 
+ 
+    </head>
+    <body>
+
+        <section class="content">  
+
+            <div class="display-flex" >
+
+                <div class="border div-01 padding"> DIV 01 </div>
+                <div class="border div-02 padding"> 
+
+                    <!--table ตาราง-->
+                    <table class="table">
+
+                        <!--tr คือ แถว-->
+                        <tr>
+                            <!--td คือ คอลลัม-->
+                            <td>col 01/1</td>
+                            <td>col 02/1</td>
+                            <td>col 03/1</td>
+                        </tr>
+                        <tr>
+                            <td>col 01/2</td>
+                            <td>col 02/2</td>
+                            <td>col 03/2</td>
+                        </tr>
+                        <tr>
+                            <td>col 01/3</td>
+                            <td>col 02/3</td>
+                            <td>col 03/3</td>
+                        </tr>
+
+                    </table>
+
+                    <br /><hr /><br />
+
+                    <table class="table-extra">
+
+                        <!-- thead หัวตาราง -->
+                        <thead>
+                            <tr>
+                                <!-- เปลี่ยน td เป็น th -->
+                                <th> Header 01 </th>
+                                <th> Header 02 </th>
+                                <th> Header 03 </th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td> col 01/1 </td>
+                            <td> col 02/1 </td>
+                            <td> col 03/1 </td>
+                        </tr>
+                        <tr>
+                            <td> col 01/2 </td>
+                            <td> col 02/2 </td>
+                            <td> col 03/2 </td>
+                        </tr>
+                        <tr>
+                            <td> col 01/3 </td>
+                            <td> col 02/3 </td>
+                            <td> col 03/3 </td>
+                        </tr>
+                        <tr>
+                            <td> col 01/4 </td>
+                            <td> col 02/4 </td>
+                            <td> col 03/4 </td>
+                        </tr>
+                        <tr>
+                            <td> col 01/5 </td>
+                            <td> col 02/5 </td>
+                            <td> col 03/5 </td>
+                        </tr>
+                        </tbody>
+
+                        <!-- tfoot ท้ายตาราง -->
+                        <tfoot>
+                            <tr>
+                                <!-- เปลี่ยน td เป็น th -->
+                                <th> footer 01 </th>
+                                <th> footer 02 </th>
+                                <th> footer 03 </th>
+                            </tr>
+                        </tfoot>
+
+                    </table>
+
+                </div>
+                <div class="border div-03 padding"> DIV 03 </div>
+
+            </div>
+
+        </section>
+
+    </body>
+</html>

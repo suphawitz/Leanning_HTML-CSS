@@ -1,0 +1,581 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+.open {
+    height: auto !important;
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* ----------------------------------- header ----------------------------------- */
+
+
+
+header {
+    width: 100%;
+    height: 120px;
+    background-color: #000;
+    border-top: 5px solid #40aed7;
+}
+
+.nav-grid {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+}
+
+/* ------ .logo ------ */
+
+
+.logo {
+    margin-top: 40px;
+    color: #fff;
+}
+.logo h1 {
+    font-size: 28px;
+    text-transform: uppercase; /* ตัวใหญ่ทั้งหมด */
+}
+.logo span {
+    font-size: 12px;
+    text-transform: uppercase; /* ตัวใหญ่ทั้งหมด */
+}
+
+
+/* ------ .menu ------ */
+
+
+ul.menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+}
+ul.menu li {
+    margin-top: 45px;
+    list-style: none;
+}
+ul.menu li a {
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+ul.menu li a:hover {
+    padding: 10px;
+    background-color: #40aed7;
+    border-radius: 5px;
+}
+
+/* ----------------------------------- section .content ----------------------------------- */
+
+.content {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+
+/* ----- .content-hearding ----- */
+
+.content-heading {
+    font-size: 80px;
+    color: #333;
+}
+
+/* ----- .content-services ----- */
+
+.content-services {
+    width: 100%;
+    height: auto;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+.content-services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    grid-gap: 20px;
+}
+
+.content-services-item {
+    border: 1px solid #e4e4e4;
+    padding: 20px;
+    background-color: #fff;
+
+    transition: .3s ease-in-out;
+}
+.content-services-item .fa {
+    font-size: 5rem;
+    color: #333;
+}
+.content-services-item h2 {
+    font-size: 32px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: #333;
+}
+.content-services-item p {
+    font-size: 12px;
+    color: #979797;
+}
+
+        /* --- .content-services:hover --- */
+
+.content-services-item:hover {
+    border: 1px solid #40aed7;
+    padding: 20px;
+    background-color: #40aed7;
+    color: #fff;
+    cursor: pointer;
+}
+.content-services-item:hover .fa {
+    font-size: 5rem;
+    color: #fff;
+}
+.content-services-item:hover h2 {
+    font-size: 32px;
+    margin: 20px 0;
+    text-transform: uppercase;
+    color: #fff;
+}
+.content-services-item:hover p {
+    font-size: 12px;
+    color: #fff;
+}
+
+/* ----- .content-meet ----- */
+
+.content-meet {
+    font-size: 80px;
+    margin: 60px;
+    color: #d3d3d3;
+    text-align: center;
+}
+
+/* ----- .content-teams ----- */
+
+.content-teams {
+    width: 100%;
+    height: auto;
+
+}
+.content-teams-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.content-teams-item h2 {
+    font-size: 16px;
+    color: #333;
+    padding: 20px 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+.content-teams-item p {
+    padding-top: 20px;
+    text-align: left;
+    color: #979797;
+}
+.content-teams-item a {
+    float: right;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 60px;
+    text-decoration: none;
+    color: #40aed7;
+}
+
+/* ----------------------------------- footer ----------------------------------- */
+
+footer {
+    widows: 100%;
+    height: 390px;
+    background-color: #303030;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+/* ----- .footer-item ----- */
+
+.footer-item {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+
+        /* --- .footer-item:nth-child(1) --- */
+
+.footer-item:nth-child(1) h3 {
+    font-size: 16px;
+    color: #fff;
+}
+.footer-item:nth-child(1) h4 {
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #979797;
+}
+.footer-item:nth-child(1) span.admin a {
+    font-size: 10px;
+    color: #40aed7;
+    text-decoration: none;
+}
+.footer-item:nth-child(1) span.admin {
+    font-size: 10px;
+    color: #666;
+}
+.footer-item:nth-child(1) span.date {
+    display: inline-block;
+    padding: 10px 0;
+    font-size: 12px;
+    color: #979797;
+}
+.footer-item:nth-child(1) p {
+    font-size: 16px;
+    color: #979797;
+}
+.footer-item:nth-child(1) a {
+    font-size: 16px;
+    color: #40aed7;
+    text-decoration: none;
+}
+
+        /* --- .footer-item:nth-child(2) --- */
+
+.footer-item:nth-child(2) h3 {
+    font-size: 16px;
+    color: #fff;
+}
+.footer-item:nth-child(2) ul {
+    padding-top: 40px;
+    font-size: 12px;
+}
+.footer-item:nth-child(2) ul li {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #404040;
+    list-style: none;
+}
+.footer-item:nth-child(2) ul li a {
+    color: #40aed7;
+    text-decoration: none;
+}
+
+        /* --- .footer-item:nth-child(3) --- */
+
+.footer-item:nth-child(3) h3 {
+    font-size: 16px;
+    padding-bottom: 40px;
+    color: #fff;
+    
+}
+.footer-item:nth-child(3) p {
+    padding-bottom: 20px;
+    color: #979797;
+}
+.footer-item:nth-child(3) a {
+    color: #40aed7;
+    text-decoration: none;
+}
+
+        /* --- .footer-item:nth-child(4) --- */
+
+.footer-item:nth-child(4) h3 {
+    padding-bottom: 40px;
+    font-size: 16px;
+    color: #fff;
+}
+.footer-item:nth-child(4) input, textarea {
+    width: 225px;
+    height: 35px;
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #222222;
+    border: none;
+    outline: none;
+}
+.footer-item:nth-child(4) textarea {
+    height: 80px;
+}
+.footer-item:nth-child(4) input[type="submit"] {
+    font-size: 16px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #40aed7;
+    transition: .3s ease-in-out;
+}
+.footer-item:nth-child(4) input[type="submit"]:hover {
+    color: #40aed7;
+    background-color: #fff;
+}
+
+
+/* ----------------------------------- copyright ----------------------------------- */
+
+.copyright {
+    width: 100%;
+    height: 60px;
+    background-color: #2b2b2b;
+    color: #979797;
+}
+
+.copyright-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 60px; /* ต้องกำหนดความสูงไปด้วย */
+}
+
+.copytext {
+    justify-self: flex-start;
+    align-self: center;
+}
+.credite {
+    justify-self: flex-end;
+    align-self: center;
+}
+
+
+/* ===========================================================================================================*/
+/* ----------------------------------- Responsive @media ----------------------------------- */
+/* ===========================================================================================================*/
+
+
+/* ===========================================================================================================*/
+/* ----------------------------------- @media (max-width: 800px) ----------------------------------- */
+
+
+@media only screen and (max-width: 800px) {
+    /* ----------------------------------- header ----------------------------------- */
+
+    
+
+    header {
+        height: auto;
+    }
+
+    .nav-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    nav .logo h1 {
+        font-size: 2rem;
+    }
+
+    ul.menu {
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+    }
+    ul.menu li {
+        height: 0.5rem;
+    }
+
+/* ----------------------------------- content ----------------------------------- */
+
+    .content-heading {
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 4rem;
+    }
+
+    .content-services-grid {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .content-services-item {
+        width: 90%;
+    }
+
+    .content-meet {
+        font-size: 4rem;
+    }
+
+    .content-teams-grid {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+    .content-teams-item {
+        width: 90%;
+    }
+    .content-teams-item p {
+        font-size: 1rem;
+    }
+
+/* ----------------------------------- footer ----------------------------------- */
+
+    footer {
+        height: auto;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-item {
+        padding: 30px 0;
+        padding-left: 30px;
+    }
+
+ /* --- .footer-item:nth-child(2) --- */
+
+    .footer-item:nth-child(2) ul {
+        padding-right: 20px;
+    }
+    .footer-item:nth-child(2) ul li a {
+        font-size: 14px;
+    }
+
+/* --- .footer-item:nth-child(4) --- */
+
+    .footer-item:nth-child(4) form  {
+        padding-left: 0;
+        padding-right: 30px;
+        text-align: center;
+    }
+
+/* ----------------------------------- copyright ----------------------------------- */
+
+    .copyright {
+        padding: 0 15px;
+        font-size: 16px;
+    }
+}
+
+
+/* ===========================================================================================================*/
+/* ----------------------------------- @media (max-width: 428px) ----------------------------------- */
+
+
+@media only screen and (max-width: 428px) {
+
+/* ----------------------------------- header ----------------------------------- */
+
+    .hamburger {
+        display: inline-block;
+        margin: 1rem;
+    }
+    .logo {
+        margin-top: 0;
+    }
+
+
+    header {
+        height: auto;
+    }
+
+    .nav-grid {
+        height: 0; /* กำหนดควมสูงเป็น 0 เพื่อให้บาร์ทั้งหมดหายไปก่อน  */
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    ul.menu {
+        grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+    }
+    ul.menu li {
+        height: 1.5rem;
+    }
+
+/* ----------------------------------- content ----------------------------------- */
+
+    .content-heading {
+        margin-top: 1rem;
+        margin-left: 0.5rem;
+        font-size: 2.5rem;
+    }
+
+    .content-services-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .content-services-item {
+        width: 85%;
+    }
+
+    .content-meet {
+        font-size: 2.5rem;
+    }
+
+    .content-teams-grid {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .content-teams-item {
+        width: 85%;
+    }
+    .content-teams-item p {
+        font-size: 1.2rem;
+    }
+
+/* ----------------------------------- footer ----------------------------------- */
+
+    footer {
+        height: auto;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-item {
+        padding: 30px 0;
+        padding-left: 30px;
+    }
+
+ /* --- .footer-item:nth-child(2) --- */
+
+    .footer-item:nth-child(2) ul {
+        padding-right: 20px;
+    }
+    .footer-item:nth-child(2) ul li a {
+        font-size: 14px;
+    }
+
+/* --- .footer-item:nth-child(4) --- */
+
+    .footer-item:nth-child(4) form  {
+        padding-left: 0;
+        padding-right: 30px;
+        text-align: center;
+    }
+
+/* ----------------------------------- copyright ----------------------------------- */
+
+    .copyright {
+        padding: 0 15px;
+        font-size: 14px;
+    }
+
+}

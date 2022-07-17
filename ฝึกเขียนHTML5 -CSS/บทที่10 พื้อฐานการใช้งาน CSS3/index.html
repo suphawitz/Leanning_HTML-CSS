@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>บทที่10 พื้อฐานการใช้งาน CSS3</title>
+        <meta charset="UTF-8">
+        <style>
+            a[href^="http"] {
+                background-image: url("background.jpg");
+                background-repeat: no-repeat;
+                background-position: right;
+            }
+            h2[title="topic"] {
+                color: white;
+                background-color: black;
+                width: 200px;
+                text-align: center;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+                text-shadow: 0px 2px 1px Gray;
+            }
+            h2[title="topic2"] {
+                width: 200px;
+                color: black;
+                text-align: center;
+                -webkit-text-stroke: 1px gray;
+            }
+            h3[title="ลิ้งค์ที่เกี่ยวข้อง"] {
+                width: 250px;
+                text-align: center;
+            }
+            #transform {
+                transform: translate(30px,10px);/*ขยับไปด้านขวา 30px เเละด้านล้าง 10px*/
+            }
+        </style>
+    </head> 
+    <body>
+        <div>
+            <h2 id="top">ลิ้งค์ไปยังเว็บไซต์</h2>
+            <ul>
+                <li><a href="https://www.google.com/">google</a></li>
+                <li><a href="https://www.apple.com/">apple</a></li>
+                <li><a href="https://www.microsoft.com/">microsoft</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2 title="topic">HTML5+CSS3</h2>
+            <h2 title="topic2">HTML5+CSS3x2</h2>
+        </div>
+        <div>
+            <h3 title="ลิ้งค์ที่เกี่ยวข้อง">ลิ้งค์ไปยังเว็บที่เกี่ยวข้อง</h3>
+            <ul>
+                <li><a href="กำหนดหลายคอลัมน์.html">กำหนดหลายคอลัมน์</a></li>
+                <li><a href="กำหนดสี่เหลี่ยมมุมโค้ง.html">กำหนดสี่เหลี่ยมมุมโค้ง</a></li>
+                <li><a href="transition.html">transition</a></li>
+            </ul>
+        </div>
+        <div id="transform">
+            <h2>transform</h2>
+            <p>123456789</p>
+        </div>
+    </body>
+</html>

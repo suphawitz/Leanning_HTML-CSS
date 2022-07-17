@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>number-range</title>
+        <meta charset="UTF-8">
+        <style>
+            .all {
+                width: auto;
+                height: 300px;
+            }
+            div[title="number"] {
+                margin: auto;
+                text-align: center;
+            }
+            div[title="range"] {
+                margin: auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div title="number" class="all">
+            <h1>กรุณากรอกตัวเลข</h1>
+            <form>
+                <input type="number" id="number" min="1" max="20" placeholder="10"><!-- min ค่าต่ำสุด max ค่าสูงสุด placeholder เลขที่เเสดงบนหน้าจอ  -->
+                <input type="submit" value="send">
+            </form>
+        </div>
+        <br />
+        <div title="range">
+            <h1>กรุณาใส่คะแนน</h1>
+            <form>
+                <label for="myInput">ลากเมาส์กำหนดคะเเนน</label>
+                <input type="range" id="range" min="1" max="10">
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </body>
+</html>

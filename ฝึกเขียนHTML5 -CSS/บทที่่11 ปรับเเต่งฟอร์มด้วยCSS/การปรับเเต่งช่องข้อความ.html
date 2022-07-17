@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>การปรับเเต่งช่องข้อความ</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background: #e3e3e3;
+        }
+        form * {
+            position: relative;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            width: 250px;
+            margin: auto;
+            font-weight: bold;
+            color: #666;
+            padding-top: 15px;
+        }
+        input {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            border: none;
+            background: none;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+            margin-bottom: 0;
+        }
+        input[type=text], input[type=password] {
+            display: block;
+            width: 250px;
+            margin: 0 auto;
+            padding: 5px;
+            background: #EEE;
+            border: 1px solid #DDD;
+            font-size: 16px;
+            color: #666;
+            border-radius: 10px;
+            box-shadow: inset 0px 2px 1px #444;
+        }
+        input[type=submit] {
+            padding: 5px;
+            background: #888888;
+            color: white;
+            border: none;
+            float: right;
+            margin-right: 14px;           
+            margin-top: 12px;
+            border-radius: 4px;
+            font-size: .8em;
+            color: #ddd; 
+            background-color: #888888;
+        }
+        input[type=submit]:hover {
+            font-size: .8em;
+            color: #ddd;
+            background-color: #777777;
+            text-shadow: 0px 1px 2px #222222;
+            box-shadow: 0px 2px 1px #444444;
+        }
+    </style>
+</head>
+<body>
+    <form class="group">
+        <label>ชื่อผู้ใช้:<input type="text" id="myUser" /></label>
+        <label>รหัสผ่าน:<input type="password" id="myPass" /></label>
+        <input type="submit" name="submit" value="OK" />
+    </form>
+</body>
+</html>

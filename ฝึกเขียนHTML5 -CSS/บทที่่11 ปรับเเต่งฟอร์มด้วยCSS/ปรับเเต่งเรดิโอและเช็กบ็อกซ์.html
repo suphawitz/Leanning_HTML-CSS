@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>ปรับเเต่งเรดิโอและเช็กบ็อกซ์</title>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            position: relative;
+            top: 20px;
+        }
+        form * {
+            background: transparent;
+        }
+        form {
+            position: relative;
+            width: 450px;
+            margin: 0 auto;
+        }
+        input[type=checkbox], input[type=radio] {
+            background: none;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+        }
+        fieldset {
+            border-radius: 8px;
+            margin-top: 15px;
+            color: #999999;
+        }
+        fieldset > input[type=checkbox], fieldset > input[type=radio] {
+            display: none;
+        }
+        fieldset > label {
+            display: block;
+            float: left;
+            padding: 1px 10px 0px 24px;
+            color: #444444;
+            cursor: pointer;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+<form class="group">
+    <fieldset>
+        <legend>เพศ</legend>
+        <input type="radio" name="sex" value="male" id="male" />
+        <label for="male">ชาย</label>
+        <input type="radio" name="sex" value="female" id="female" />
+        <label for="female">หญิง</label>
+    </fieldset>
+    <fieldset>
+        <legend>งานอดิเรก</legend>
+        <input type="checkbox" name="sport" value="1" id="sport" />
+        <label for="sport">เล่นกีฬา</label>
+        <input type="checkbox" name="game" value="2" id="game" />
+        <label for="game">เล่นเกม</label>
+        <input type="checkbox" name="reading" value="3" name="reading" />
+        <label for="reading">อ่านหนังสือ</label>
+        <input type="checkbox" name="stamp" value="4" name="stamp" />
+        <label for="stamp">สะสมสแตมป์</label>
+    </fieldset>
+</form>
+</body>
+</html>ไ

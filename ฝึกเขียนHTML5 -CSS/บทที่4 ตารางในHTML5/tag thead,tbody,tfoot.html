@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html lang="th">
+    <head>
+        <title>ทดสอบตาราง</title>
+        <meta charset="UTF-8">
+        <style>
+                table{
+                    background-color:blue;
+                    color:white;
+                    width: 300px;
+                } 
+                td{
+                    border:1px solid cyan;
+                    text-align:center;
+                }   
+                thead{
+                    background-color:magenta;
+                }
+                tfoot{
+                    background-color:#dedede;
+                    color: black;
+                }
+        </style>
+    </head>
+    <body> 
+        <table><!--แสดงจุดเริ่มต้นของตาราง-->
+            <caption>ตารางยอดขาย</caption><!--ชื่อตาราง-->
+            <thead><!--ส่วนหัวขอตาราง-->
+                <tr>
+                    <th>ชื่อสินค้า</th><th>ยอดขาย</th>
+                </tr>
+            </thead>
+            <tbody><!--ส่วนตกลางขอตาราง-->
+                <tr><!--แสดงแแถวเเรกของตาราง-->
+                    <td>สินค้า 1 </td><td>ราคา</td>
+                </tr>
+                <tr>
+                    <td>สินค้า 2 </td><td>ราคา</td>
+                </tr>
+            </tbody>
+            <tfoot><!--ส่วนท้ายขอตาราง-->
+                <tr>
+                    <th>รวม</th><td>ราคารวม</td>
+                </tr>
+            </tfoot>
+        </table>    
+    </body>
+</html>

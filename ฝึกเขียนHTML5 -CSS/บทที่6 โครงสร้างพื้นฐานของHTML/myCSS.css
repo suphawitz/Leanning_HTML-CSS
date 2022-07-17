@@ -1,0 +1,10 @@
+#topic { 
+    width: 100%; 
+}
+#topic h1 {
+    margin: 0 auto;
+    width: 600px;
+    display: block;
+    text-align: center; 
+    border: black solid;
+}

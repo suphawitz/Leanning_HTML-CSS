@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th>">
+    <head>
+        <title>บทที่8 การใช้ไฟล์วิดีโอและเสียง</title>
+        <meta charset="UTF-8">
+        <style>
+            video {
+                width: 1350px;
+                height: 600px;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            alert("suphawit");
+        </script><!--เป็นส่วนของ js-->
+        <div>
+            <video controls="controls" preload="auto" poster="background-video.jpg" loop ><!--ใส่ controls="controls" ลงไปเพื่อการควบคุมวีดีโอได้ loop เป็นการเล่นวีดีโอซ้ำ-->
+                <source src="เพลงประกอบวิดีโอเพราะๆที่ Youtuber.mp4" type="video/mp4" /><!--ใช้สำหรับ mp4-->
+                <source src="เพลงประกอบวิดีโอเพราะๆที่ Youtuber.webm" type="video/webm" /><!--ใช้สำหรับ webm-->
+                <source src="เพลงประกอบวิดีโอเพราะๆที่ Youtuber.ogg" type="video/ogg" /><!--ใช้สำหรับ ogg-->
+            </video>
+        </div>
+    </body>
+</html>

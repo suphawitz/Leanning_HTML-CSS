@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="th">
+    <head>
+        <title>บทที่9 ทบทวนพื้นฐานCSS</title>
+        <meta charset="UTF-8">
+        <link href="myCSS.css" rel="stylesheet"/><!--ใช้ลิ้งไปยัง myCSS.css-->      
+        <style>
+            #firstdiv {/*ใช้กับ id ของแต่ละอันแยกกัน*/
+                font-size: 20px;
+                margin: 0 auto;
+                background:rgb(223, 190, 42);
+                text-align: center;/*ทำให้ข้อความอยู่ตรงกลาง*/
+                color: white;
+                border: 5px solid black;/*เป็นการตีกรอบของพื้นที่ที่เรากำหนด 5px คือความหนา
+                solid คือกรอบเป็นเส้นทึบ ยังมี dashed เป็นเส้นประ*/
+            }
+            #mainData {
+                margin: 0 auto;
+                color: rgb(43, 41, 41);
+                border: 2px solid black;
+                background: yellow;
+                padding: 20px;/*ทำให้ห่างจากขอบ 20px*/
+                text-align: center;
+                display: block;
+            }
+            #twodiv {
+                color: red;
+                font-size: 20px;
+                text-align: center;              
+            }
+            img.headshot {
+                width: 600px;
+                height: 500px;
+            }
+            .myclass {/*ใช้กัย class สามารถใช้ได้หลายclassพร้อมกันได้*/
+                font-size: 20px;
+                background: 10px green;
+                text-align: center;
+                color: white;
+            }
+        </style>    
+    </head>
+    <body> 
+        <div id="firstdiv"><!--การกำหนดidและclassจะทำให้นำไปแก้ไขใน css ได้ง่าย 
+            สามารถกำหนดได้ว่าต้องการแก้ไขในส่วนใด การใช้ id จะใช้ในcssจะใช้นำขึ้นด้วย # 
+            การใช้ class จะใช้ในcssจะใช้นำขึ้นด้วย . -->
+            <h2>ทบทวนพื้นฐาน CSS</h2>
+        </div>
+        <div id="twodiv" class="myclass">
+            <h3>Hello World!</h3>
+        </div>
+        <div class="myclass">
+            <p>ข้อความ</p>
+        </div>
+        <div id="mainData">
+            ในการป้อนงานในโครงงานแบบ Project Start Date ซึ่งหมายถึง งานที่กำหนดวันเริ่มต้น
+            โครงการ โปรแกรมจะกำหนดว่างานทีเราป้อนลงไปนั้น จะเป็นวันเดียวกันกับวันที่เริ่มต้นโครงการ 
+            เช่น หากเริ่มวันที่ 4 กรกฎาคม เมื่อมีการป้อนงาน วันเริ่มต้นของงาน วันเริ่มต้นของงาน 
+            จะถูกกำหนดเป็นวันที่ 4 กรกฎาคม ทันที
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=NlNdtKyESXA&list=PLcLc3KmtwXNTWzWg38W2QZ-QiwZbE7bQi&index=9"><img src="74503140_960819154304213_7122861892120346624_n.jpg" class="headshot"></a><!--การกำหนดลิงค์ไว้ในรูป จะต้องกำหมด tag a ครอบ tag imag ไว้-->
+        </div>
+        <div id="blockContainer">
+            <div id="testlinkCSS">
+                <h2 title="love">ddddd</h2><!--กำหนด title เพื่อบ่งบอกชื่อที่จะนำแก้ใน myCSS.css เพื่อที่จะเเก้แค่ h2 นี้เท่านั้น-->
+                <p>hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</p>
+            </div>
+            <div id="font">
+                <h1>คณะเจ้าหน้าที่โรงพยาบาลเสริมงาม</h1>
+                <p>คณะเจ้าหน้าที่โรงพยาบาลเสริมงาม ขอขอบพระคุณ คุณกิตติพงษ์(เจ๋ง) ยะเปียง เจ้าของนะโมฟาร์ม (เมล่อนฟาร์ม) บ้านสบเสริม ที่ได้มอบเมล่อนเพื่อเป็นขวัญและกำลังใจแด่เจ้าหน้าที่ทุกคนที่ต้องต่อสู้และให้บริการผู้ป่วยในช่วงที่ไวรัสโคโรน่าระบาดในช่วงนี้
+                    คณะเจ้าหน้าที่ทุกๆคนต้องขอขอบคุณมา ณ โอกาสนี้ครับ</p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta />
+        <title> STEP 04 - สอนน้องให้เป็นโปรแกรมเมอร์ </title>
+        <style>
+
+            section { display: block; }
+            section.content { display: block; } 
+              
+            div.display-flex { display: flex; }
+            div.border { border: 1px solid #dddddd;}
+
+            div.div-01 { flex: 0 0 30%; max-width: 30%; }
+            div.div-02 { flex: 0 0 40%; max-width: 40%; }
+            div.div-03 { flex: 0 0 30%; max-width: 30%; }
+
+            /*กำหมดค่าเดียว จะทำให้แสดงผลเป็นค่าทั้ง4*/ /*บน ขวา ล่าง ซ้าย*/ 
+            .margin { 
+                margin: 10px 0 0 0;
+                margin: 10px;
+                margin-top: 0;
+                margin-right: 0;
+                margin-bottom: 0;
+                margin-left: 0;
+            } 
+
+            /*กำหมดค่าเดียว จะทำให้แสดงผลเป็นค่าทั้ง4*/ /*บน ขวา ล่าง ซ้าย*/ 
+            .padding { 
+                padding: 10px 0 0 0; 
+                padding: 10px; 
+                padding-top: 0;
+                padding-right: 0;
+                padding-bottom: 0;
+                padding-left: 0;
+            }
+
+        </style>
+        <script>
+
+        </script> 
+ 
+    </head>
+    <body>
+
+        <section class="content">  
+
+            <div class="display-flex" >
+
+                <div class="border div-01">
+                    <div class="margin"> 
+                        DIV 01 
+                    </div>
+                </div>
+
+                <div class="border div-02 padding"> DIV 02 </div>
+                <div class="border div-03 padding"> DIV 03 </div>
+
+            </div>
+
+        </section>
+
+    </body>
+</html>

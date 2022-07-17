@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>ปรับแต่งตัวเลือก</title>
+    <meta charset="UTF-8">
+    <style>
+        form {
+            position: relative;
+            top: 20px;
+            width: 350px;
+            margin: 0 auto;
+        }
+        form * {
+            -webkit-appearance: none;/*ทำให้ไม่มีเครื่องหมายบนเเท็บ*/
+            -moz-appearance: none;
+            background: transparent;
+        }
+        select, option {
+            border: none;
+            background: none;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+        }
+        select {
+            background: #555555;
+            border-radius: 5px;
+            width: 212px;
+            height: 32px;
+            padding-left: 10px;
+            outline: solid transparent;
+            font-size: 12px;
+            color: white;
+        }
+        option {
+            background: #88dddd;
+            padding-left: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form class="group">
+        <label for="product">เลือกประเภทสินค้า</label>
+        <select name="productGroup" id="product">
+            <option>คลิกเลือก</option>
+            <option value="MacbookPro">Macbook Pro</option>
+            <option value="MacbookAir">Macbook Air</option>
+            <option value="iMac">iMac</option>
+            <option value="macMini">Mac Mini</option>
+        </select>
+    </form>
+</body>
+</html>

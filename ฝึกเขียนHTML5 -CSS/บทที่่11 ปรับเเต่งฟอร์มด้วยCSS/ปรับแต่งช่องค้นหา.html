@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <title>ปรับแต่งช่องค้นหา</title>
+    <meta charset="UTF-8">
+    <style>
+        h2 {
+            width: 320px;
+            height: 40px;
+            background-color: aquamarine;
+            margin: auto;
+            text-align: center;
+            border: none;
+            border-radius: 40px 40px 40px 40px;
+            box-shadow: 5px 5px 20px aqua;/* เงาของกรอบ */
+            text-shadow: 2px 2px 1px grey;/* เงาของตัวหนังสือ */
+        }
+        form {
+            position: relative;
+            top: 20px;
+        }
+        form * {
+            background: transparent;/* ทำให้ background โปร่งใส */
+        }
+        input[type=text] {
+            border: none;
+            background: transparent;/* ทำให้ background โปร่งใส */
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            left: 35px;
+            float: right;
+            width: 120px;
+            height: 35px;
+            font-size: 12px;
+            color: white;
+            outline: solid transparent;/* ทำให้ตอนกดจะพิมไม่มีกรอบสี่เหลี่ยม */
+        }
+        form {
+            background-color: rgb(54, 54, 175);
+            position: relative;
+            width: 196px;
+            height: 35px;
+            margin: 0 auto;
+            border: 1px solid #AAA;
+            -webkit-border-radius:30px;
+            border-radius: 30px 30px 30px 30px;
+            -webkit-box-shadow:inset 0px 2px 1px #444;
+            box-shadow: inset 0px 2px 1px #444;
+        }
+        input[type=submit] {
+            position: relative;
+            left: 149px;
+            height: 35px;
+            width: 50px;
+            border: none;
+            background-color: rgb(54, 54, 175);
+            -webkit-border-radius:0 40px 40px 0;
+            border-radius: 0 40px 40px 0;
+            border-left: 1px solid #aaa;
+            font-size: 12px;
+            color: white;
+        }
+        input[type=submit]:hover {
+            background-color: rgb(117, 117, 224);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>ปรับแต่งช่องค้นหา</h2>
+        <form action="https://www.google.com/search" target="_blank">
+            <input id="searchbox" type="text" name="q" title="พิมพ์สิ่งที่คุฯต้องการค้นหาจาก google">
+            <input type="submit" value="go">
+        </form>
+    </div>
+</body>
+</html>

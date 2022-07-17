@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>tel-color</title>
+        <meta charset="UTF-8">
+        <style>
+            .tel-color {
+                width: auto;
+                height: 300px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tel-color">
+            <h1>กรุณากรอกเบอร์โทรศัพย์ :</h1>
+            <form>
+                <label for="telnum">Mobile Phone</label>
+                <input type="tel" id="telnum" pattern="[0-9] {10}"><!--type="tel" คือให้ใส่เฉพาะเบอร์โทรเท่านั้น pattern
+                     [0-9]ตัวเลขตั้งแต่ 0-9 {10} มีความยาวทั้งหมด10ตัว-->
+                <input type="submit" value="send">
+            </form>
+        </div>
+        <div class="tel-color">
+            <h1>กรุณาเลือกสี</h1>
+            <form>
+                <label>เลือกสีที่ต้องการ :</label>
+                <input type="color" id="mycolor"><!--เลือกสี-->
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </body>
+</html>
