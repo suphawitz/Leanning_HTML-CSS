@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> กาทำงานของ Position </title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container {
+            max-width: 1200px;
+            height: 1500px;
+            margin: 0 auto;
+        }
+        .container-02 {
+            max-width: 1200px;
+            height: 2000px;
+            margin: 0 auto;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        .static {
+            position: static;
+            background-color: aqua;
+        }
+        .relative {
+            position: relative;
+            left: 20px;
+            top: 30px;
+            background-color: red;
+        }
+        .absolute {
+            position: absolute;
+            left: 20px;
+            top: 30px;
+            background-color: blue;
+        }
+        .fixed {
+            position: fixed;
+            bottom: 1px;
+            background-color: green;
+        }
+        .sticky {
+            /* ต้องกำหนด top right left bottom ด้วยไม่งั้นจะไม่แสดง */
+            position: sticky;
+            top: 0;
+            background-color: pink;
+            z-index: 999;
+        }
+
+        .test-position {
+            position: relative;
+            width: 300px;
+        }
+        .test-position img {
+            width: 100%;
+        }
+        .test-position h2 {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            padding: 5px;
+            background: rgb(245, 123, 10);
+            color: #fff;
+            z-index: 999;
+        }
+        .test-position p {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 15px;
+            background: rgb(245, 123, 10);
+            color: #fff;
+        }
+
+        .test-position h3 {
+            position: absolute;
+            bottom: 10px;
+            right: -100px;
+            padding: 15px;
+            background: rgb(245, 123, 10);
+            color: #fff;
+
+            /* z-index เป็นการกำหนดค่าให้ส่วนไหนอยู่หน้า ส่วนไหนอยู่หลัง */
+            z-index: -1;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <!-- เป็นค่าเริ่มต้นของ position ไม่สามารถกำหนดค่าอะไรได้ -->
+        <div class="box static"> static </div>
+
+        <!-- จัดตำแหน่งได้ตามใจ สามารถทับสิ่งอื่นได้ -->
+        <div class="box relative"> relative </div>
+
+        <!-- เป็นการย้ายเข้าไป ทับ กับสิ่งอื่นได้ เช่น ใช้ร่วมกับ position: relative; จะใช้ขนาดอ้างอิงจากกล่องที่เป็น relative 
+            สามารถออกไปนอกกรอบที่มันอยู่ได้ 
+            * ใช้ขนาดหน้าจอเป็นตัวกำหนดเอง -->
+        <div class="box absolute"> absolute </div>
+
+        <!-- จะ fix อยู่กับหน้าจออัตโนมัติ ไม่ว่าจะเลื่อนไปไหนจะไปด้วยเสมอ -->
+        <div class="box fixed"> fixed </div>
+
+
+        <div class="box sticky">
+            I am Position sticky 
+        </div>
+
+
+        <div class="template-position">
+            <div class="container">
+                <div class="tem1">
+                    <div class="tm-re" style="position: relative; width: 300px; height: 100px; border: 2px solid #000;">
+                        This is position relative 
+
+                        <div class="tm-ab" style="position: absolute; top: 6px; right: 20px; width: 200px; height: 50px; border: 2px solid rgb(71, 51, 255);">
+                            This is position absolute
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-02">
+                <div class="test-position">
+                    <img src="img.jpg" alt="">
+
+                    <h2>View</h2>
+                    <p>50+</p>
+
+                    <h3> ซ่อนด้านหลัง </h3>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+</body>
+</html>
