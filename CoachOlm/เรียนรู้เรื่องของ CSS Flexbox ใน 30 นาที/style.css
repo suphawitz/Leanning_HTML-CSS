@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;/* row, row-reverse | column, column-reverse */
+    flex-wrap: wrap; /* จัด responsive ลงด้านล่าง -> nowrap, wrap, wrap-reverse */
+
+    /* flex-flow: row wrap; --เป็นชอตแฮน เขียนให้ได้สั้นๆ */
+
+    justify-content: space-around;
+    align-items: baseline;/* baseline จัดกึ่งกลางระหว่างตัวอักษรด้านใน */
+    align-content: center; /*ใช้ร่วมกับ flex-wrap: wrap; */
+}
+
+.flex-items-1,
+.flex-items-2,
+.flex-items-3,
+.flex-items-4,
+.flex-items-5 {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    margin: 10px;
+}
+
+.flex-items-2 {
+    height: 300px;
+    padding-top: 30px;
+
+    align-self: center;/* จัดตำแหน่งของ flex-items ของตัวที่ใส่อยู่ */
+}
+
+/* จำตำแหน่ง และย้ายตำแหน่งให้ไปแทนที่ *แต่ต้องกำหนดทุกตัว */
+.flex-items-1 {
+    order: 4;
+}
+.flex-items-2 {
+    order: 3;
+}
+.flex-items-3 {
+    order: 1;
+}
+.flex-items-4 {
+    order: 5;
+}
+.flex-items-5 {
+    order: 2;
+}
